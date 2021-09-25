@@ -1,0 +1,14 @@
+.active {
+    background: rgb(77, 11, 231);
+}
+
+.custom-button-modification {
+    border-color: rgb(77, 11, 231);
+    color: rgb(77, 11, 231);
+}
+
+.custom-button-modification:hover {
+    color: #fff;
+    border-color: transparent;
+    background: rgb(77, 11, 231);
+}
