@@ -28,7 +28,7 @@
                 </section>
 
                 <div data-aos="zoom-in" class="col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-4" *ngFor="let product of products">
-                    <app-product-item [product]="product"></app-product-item>
+                    <app-product-item [routerLink]="['/shop/' + product.id]" [product]="product"></app-product-item>
                 </div>
 
                 <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-4" *ngIf="totalCount == 0">
