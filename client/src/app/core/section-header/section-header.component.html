@@ -1,0 +1,12 @@
+<ng-container *ngIf="(breadcrumb$ | async) as breadcrumbs">
+    <section *ngIf="breadcrumbs.length > 0 && breadcrumbs[breadcrumbs.length - 1].label !== 'Home'" class="py-3" style="margin-top: 105px; background: #f5f5f5;">
+        <article class="row d-flex justify-content-center m-auto align-items-center" style="width: 80%;">
+            <div class="col-6 d-flex justify-content-center">
+                <h2>{{ breadcrumbs[breadcrumbs.length - 1].label }}</h2>
+            </div>
+            <div class="col-6 d-flex justify-content-center">
+                <xng-breadcrumb></xng-breadcrumb>
+            </div>
+        </article>
+    </section>
+</ng-container>
