@@ -16,7 +16,7 @@ export class ShopComponent implements OnInit {
   
   @ViewChild('search') searchInput!: ElementRef;
 
-  products: Product[] = [];
+  products!: Product[];
   brands: Brand[] = [];
   types: Brand[] = [];
 
